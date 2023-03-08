@@ -12,6 +12,6 @@ namespace ProductService
     public interface IProductService
     {
         [OperationContract]
-        void DoWork();
+        IEnumerable<Product> GetProducts(int categoryId);
     }
 }
